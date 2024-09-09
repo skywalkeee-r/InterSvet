@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intersvet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="producthandler">
+        <div class="product">
+            <img src="Img/MaytoniMOD.jpg" alt="">
+            <div>
+                <h3>Потолочный светильник Maytoni MOD080CL-08CH</h3>
+                <p>38 790 руб./шт</p>
+                <button onclick="stacking(productlist[0])">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="Img/Maytoni.jpg" alt="">
+            <div>
+                <h3>Подвесной светильник Maytoni MOD058PL-L100B4K</h3>
+                <p>37 290 руб./шт</p>
+                <button onclick="stacking(productlist[1])">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="Img/Favorite Assembly.jpeg" alt="">
+            <div>
+                <h3>Подвесная люстра Favourite Assembly 2060-7P</h3>
+                <p>50 900 руб./шт</p>
+                <button onclick="stacking(productlist[2])">Добавить в корзину</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="Img/King Light.jpeg" alt="">
+            <div>
+                <h3>Подвесная люстра Kink Light Криста 08476-19,20</h3>
+                <p>12 950 руб./шт</p>
+                <button onclick="stacking(productlist[3])">Добавить в корзину</button>
+            </div>
+        </div>
+    </div>
+    <div class="numproducts">
+        <h3>Количество товаров:</h3>
+        <h1>0 шт.</h1>
+        <button onclick="clearcartlist()">Х Очистить</button>
+        <button onclick="showexpenproduct()">Самый дорогой товар</button>
+        <button onclick="showcheapproduct()">Самый дешёвый товар</button>
+    </div>
+    <section>
+        <div class="shopingcart"></div>
+        <div class="price">
+            <h3>Итого:</h3>
+            <h1>0 руб.</h1>
+        </div>      
+    </section>
+    <script src="scripts/script.j"></script>
+    <script src="scripts/script2.js"></script>
+</body>
+
+</html>
