@@ -33,6 +33,7 @@ function deleteproduct(id) {
             sumtext.innerText = sum + " руб.";
             productcouns -= product[0].quantity;
             prodtext.innerText = productcouns + " шт.";
+            productlist[i].quantity = 1;
             return;
         }
     }
@@ -112,6 +113,9 @@ function clearcartlist() {
     sum = 0;
     sumtext.innerText = sum + " руб.";
     productcouns = 0;
+    for (let i = 0; i < productlist.length; i++) {
+        productlist[i].quantity = 1;
+    }
     prodtext.innerText = productcouns + " шт.";
     cart.innerHTML = '';
 }
