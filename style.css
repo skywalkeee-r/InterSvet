@@ -1,5 +1,6 @@
 .producthandler {
     display: flex;
+    justify-content: center;
 }
 
 .product {
@@ -8,7 +9,7 @@
     margin: 0 10px;
     background-color: white;
     align-items: center;
-    border: 1px rgb(220, 220, 220)  solid;
+    border: 1px rgb(220, 220, 220) solid;
     text-align: center;
     width: 300px;
     height: 325px;
@@ -32,7 +33,15 @@
 }
 
 .producthandler :hover {
-    box-shadow: 0px 0px 10px 3px #000;
+    box-shadow: 0px 0px 10px 3px #d3d3d3;
+}
+
+.producthandler :hover .name {
+    color: #5ba38f;
+}
+
+.product :hover .product_price {
+    color: black;
 }
 
 .product :hover {
@@ -43,14 +52,17 @@ section {
     display: flex;
 }
 
+.cart {
+    width: 100%;
+    margin: 50px;
+    border: 2px rgb(220, 220, 220) solid;
+    background-color: white;
+    min-height: 500px;
+}
+
 .shopingcart {
     display: flex;
     flex-direction: column;
-    width: 900px;
-    margin: 50px;
-    border: 1px solid black;
-    background-color: aliceblue;
-    min-height: 500px;
 }
 
 .price {
@@ -149,4 +161,31 @@ section {
     text-align: center;
     font-size: 14px;
     color: #a1a1a1;
+}
+
+.clear {
+    background-color: white;
+    border: 2px rgb(220, 220, 220) solid;
+    color: black;
+    width: 110px;
+    height: 30px;
+    font-size: 13px;
+}
+
+.show_expensive {
+    background-color: white;
+    border: 2px rgb(220, 220, 220) solid;
+    color: black;
+    width: 160px;
+    height: 30px;
+    font-size: 13px;
+}
+
+.show_cheap {
+    background-color: white;
+    border: 2px rgb(220, 220, 220) solid;
+    color: black;
+    width: 160px;
+    height: 30px;
+    font-size: 13px;
 }

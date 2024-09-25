@@ -15,7 +15,7 @@
             <img src="Img/MaytoniMOD.jpg" alt="">
             <div>
                 <p class="name">Потолочный светильник Maytoni MOD080CL-08CH</p>
-                <p>38 790 руб.</p>
+                <p class="product_price">38 790 руб.</p>
                 <button onclick="stacking(productlist[0])">В корзину</button>
             </div>
         </div>
@@ -23,7 +23,7 @@
             <img src="Img/Maytoni.jpg" alt="">
             <div>
                 <p class="name">Подвесной светильник Maytoni MOD058PL-L100B4K</p>
-                <p>37 290 руб.</p>
+                <p class="product_price">37 290 руб.</p>
                 <button onclick="stacking(productlist[1])">В корзину</button>
             </div>
         </div>
@@ -31,7 +31,7 @@
             <img src="Img/Favorite Assembly.jpeg" alt="">
             <div>
                 <p class="name">Подвесная люстра Favourite Assembly 2060-7P</p>
-                <p>50 900 руб.</p>
+                <p class="product_price">50 900 руб.</p>
                 <button onclick="stacking(productlist[2])">В корзину</button>
             </div>
         </div>
@@ -39,24 +39,26 @@
             <img src="Img/King Light.jpeg" alt="">
             <div>
                 <p class="name">Подвесная люстра Kink Light Криста 08476-19,20</p>
-                <p>12 950 руб.</p>
+                <p class="product_price">12 950 руб.</p>
                 <button onclick="stacking(productlist[3])">В корзину</button>
             </div>
         </div>
     </div>
-    <div class="numproducts">
-        <h3>Количество товаров:</h3>
-        <h1>0 шт.</h1>
-        <button onclick="clearcartlist()">Х Очистить</button>
-        <button onclick="showexpenproduct()">Самый дорогой товар</button>
-        <button onclick="showcheapproduct()">Самый дешёвый товар</button>
-    </div>
     <section>
-        <div class="shopingcart"></div>
-        <div class="price">
-            <h3>Итого:</h3>
-            <h1>0 руб.</h1>
-        </div>      
+        <div class="cart">
+            <div class="numproducts">
+                <h3>Количество товаров:</h3>
+                <h1>0 шт.</h1>
+                <button onclick="clearcartlist()" class="clear">Х Очистить</button>
+                <button onclick="showexpenproduct()" class="show_expensive">Самый дорогой товар</button>
+                <button onclick="showcheapproduct()" class="show_cheap">Самый дешёвый товар</button>
+            </div>
+            <div class="shopingcart"></div>
+            <div class="price">
+                <h3>Итого:</h3>
+                <h1>0 руб.</h1>
+            </div>    
+        </div>  
     </section>
     <script src="scripts/script.js"></script>
 </body>
