@@ -1,6 +1,7 @@
 .producthandler {
     display: flex;
     justify-content: center;
+    height: 350px;
 }
 
 .product {
@@ -34,6 +35,7 @@
 
 .producthandler :hover {
     box-shadow: 0px 0px 10px 3px #d3d3d3;
+    padding-bottom: 25px;
 }
 
 .producthandler :hover .name {
@@ -46,6 +48,7 @@
 
 .product :hover {
     box-shadow: none;
+    padding: 0;
 }
 
 section {
@@ -55,6 +58,7 @@ section {
 .cart {
     width: 100%;
     margin: 50px;
+    margin-top: 20px;
     border: 2px rgb(220, 220, 220) solid;
     background-color: white;
     min-height: 500px;
@@ -70,10 +74,12 @@ section {
     height: 126px;
     width: auto;
     align-items: center;
+    margin-right: 40px;
+    margin-left: 10px;
 }
 
-.price h1 {
-    margin-left: 300px;
+.price .total_price {
+    margin-left: 30px;
 }
 
 .numproducts {
@@ -81,7 +87,7 @@ section {
     height: 126px;
     width: auto;
     align-items: center;
-    margin-left: 50px;
+    margin-left: 40px;
 }
 
 .numproducts h1 {
@@ -168,7 +174,7 @@ section {
     border: 2px rgb(220, 220, 220) solid;
     color: black;
     width: 110px;
-    height: 30px;
+    height: 40px;
     font-size: 13px;
 }
 
@@ -177,7 +183,7 @@ section {
     border: 2px rgb(220, 220, 220) solid;
     color: black;
     width: 160px;
-    height: 30px;
+    height: 40px;
     font-size: 13px;
 }
 
@@ -186,6 +192,6 @@ section {
     border: 2px rgb(220, 220, 220) solid;
     color: black;
     width: 160px;
-    height: 30px;
+    height: 40px;
     font-size: 13px;
 }
