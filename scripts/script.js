@@ -12,6 +12,7 @@ let sumtext = document.querySelector(".price h1");
 let prodtext = document.querySelector(".numproducts h1");
 let expenproduct;
 let cheapproduct;
+let cart_empty = document.querySelector(".cart_empty");
 newelem.className = "newblock";
 document.body.append(newelem);
 function makeproduct(name, Price, img_url, quantity, id) {
@@ -34,6 +35,10 @@ function deleteproduct(id) {
             productcouns -= product[0].quantity;
             prodtext.innerText = productcouns + " шт.";
             productlist[i].quantity = 1;
+            if (cartlist < 1) {
+                cart_empty.classList.add("cart_empty");
+                cart_empty.classList.remove("cart_empty_none");
+            }
             return;
         }
     }
@@ -53,6 +58,8 @@ function stacking(product) {
             }
         }
     }
+    cart_empty.classList.remove("cart_empty");
+    cart_empty.classList.add("cart_empty_none");
     cartlist.push(product);
     productcouns++;
     prodtext.innerText = productcouns + " шт.";
@@ -118,6 +125,8 @@ function clearcartlist() {
     }
     prodtext.innerText = productcouns + " шт.";
     cart.innerHTML = '';
+    cart_empty.classList.add("cart_empty");
+    cart_empty.classList.remove("cart_empty_none");
 }
 function updatevalue(value, id) {
     for (let i = 0; i < cartlist.length; i++) {

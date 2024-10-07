@@ -69,6 +69,27 @@ section {
     flex-direction: column;
 }
 
+.cart_empty {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart_empty_img {
+    align-self: center;
+    width: 131px;
+    height: 116px;
+}
+
+.cart_empty_p {
+    align-self: center;
+    color: #bababa;
+    font-size: 35px;
+}
+
+.cart_empty_none {
+    display: none;
+}
+
 .price {
     display: flex;
     height: 126px;
